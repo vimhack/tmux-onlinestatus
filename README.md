@@ -9,7 +9,7 @@ A tmux plugin that displays online status in tmux status bar.
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
 ```tmux
-set -g @plugin 'tmux-plugins/tmux-onlinestatus#main'
+set -g @plugin 'vimhack/tmux-onlinestatus#main'
 ```
 
 Hit `prefix + I` to fetch the plugin and source it.
@@ -21,7 +21,7 @@ Hit `prefix + I` to fetch the plugin and source it.
 Clone the repo:
 
 ```sh
-$ git clone https://github.com/tmux-plugins/tmux-online-status ~/clone/path
+$ git clone https://github.com/vimhack/tmux-onlinestatus ~/clone/path
 ```
 
 Add this line to the bottom of `.tmux.conf`:
