@@ -36,7 +36,7 @@ print_status() {
 
     curl_command="curl --connect-timeout $timeout $url >/dev/null 2>&1"
     if ! eval "$curl_command"; then
-        [[ -n "$terminal_proxy" ]] && export all_proxy="$terminal_proxy"
+        [[ -n "$terminal_proxy" ]] && eval "$terminal_proxy"
         eval "$curl_command" && echo "#[fg=$online_fgcolor]$online_icon" ||
             echo "#[fg=$offline_fgcolor]$offline_icon"
     else
